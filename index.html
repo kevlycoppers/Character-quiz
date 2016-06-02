@@ -2,51 +2,58 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
+    <link rel="stylesheet" href="css/styles.css" type="text/css">
     <script src="js/jquery-1.12.4.js"></script>
     <script src="js/script.js"></script>
     <title>Characters</title>
   </head>
   <body>
     <div class="container">
-      <form>
-        <div class="form-group">
-          <h3>What is your hair color?</h3>
-          <select class="form-control" id="hair">
-            <option>Blond</option>
-            <option>Brown</option>
-            <option>Black</option>
-            <option>Ginger</option>
-          </select>
-        </div>
-        <div class="form-group">
-          <h3>Your friend yells at you, but you did nothing wrong. What do you do?</h3>
-          <select class="form-control" id="yelling">
-            <option>Fight</option>
-            <option>Submitt</option>
-            <option>Yell back</option>
-          </select>
-        </div>
-        <div class="form-group">
-          <h3>What is your fav food?</h3>
-          <select class="form-control" id="food">
-              <option>Ramen</option>
-              <option>Steak</option>
-              <option>Salad</option>
-          </select>
-        </div>
-        <div>
-          <h3>How would you describe yourself?</h3>
-          <select class="form-control" id="yourself">
-            <option>Cool</option>
-            <option>Shy</option>
-            <option>Kick ass</option>
-          </select>
-        </div>
-        <hr>
-        <button type="submit" class="btn btn-success">Submit</button>
-      </form>
+      <div id="blanks">
+        <form>
+          <div class="form-group">
+            <h3>What is your hair color?</h3>
+            <select class="form-control" id="hair">
+              <option>Blond</option>
+              <option>Brown</option>
+              <option>Black</option>
+              <option>Ginger</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <h3>Your friend yells at you, but you did nothing wrong. What do you do?</h3>
+            <select class="form-control" id="yelling">
+              <option>Fight</option>
+              <option>Submit</option>
+              <option>Yell back</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <h3>What is your fav food?</h3>
+            <select class="form-control" id="food">
+                <option>Ramen</option>
+                <option>Steak</option>
+                <option>Salad</option>
+            </select>
+          </div>
+          <div>
+            <h3>How would you describe yourself?</h3>
+            <select class="form-control" id="yourself">
+              <option>Cool</option>
+              <option>Shy</option>
+              <option>Kick ass</option>
+            </select>
+          </div>
+          <hr>
+          <button type="submit" class="btn btn-success">Submit</button>
+        </form>
+      </div>
+      <hr>
+      <div id="match">
+        <p>You are matched with <span class="character"></span>!</p>
+      </div>
     </div>
+
   </body>
 </html>
