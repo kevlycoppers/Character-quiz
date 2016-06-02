@@ -1,3 +1,7 @@
+.container {
+  width: 60%
+}
+
 #match {
   display: none;
 }
